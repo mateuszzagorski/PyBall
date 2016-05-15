@@ -3,7 +3,7 @@ import random
 import time
 
 tk = Tk()
-tk.title("BallPy")
+tk.title("PyBall")
 tk.resizable(0, 0)
 tk.wm_attributes("-topmost", 1)
 tk.wm_iconbitmap("py_icon.ico")
@@ -17,7 +17,7 @@ class Ball:
 		self.paddle = paddle
 		self.id = canvas.create_oval(10, 10, 25, 25, fill = color)
 		self.canvas.move(self.id, 245, 100)
-		starts = [-3, -2, -1, 1, 2, 3]
+		starts = [-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]
 		random.shuffle(starts)
 		self.x = starts[0]
 		self.y = -3
